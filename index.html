@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <script src="index.js"></script>
-    <div>
-<button id="rock" onclick="result(this.id)">Rock</button>
-<button id="paper" onclick="result(this.id)">Paper</button>
-<button id="scissors" onclick="result(this.id)">Scissors</button>
-    </div>
+<div class="header">
+    <h1>Rock Paper Scissors</h1>
+</div>
+
+<div class="container">
+ <button id="rock" onclick="result(this.id)" title="Rock">
+  <img width="60" height="40" src="images/rock.png" > 
+ </button>
+</div>
+
+<div class="container">
+ <button id="paper" onclick="result(this.id)" title="Paper">
+   <img width="60" height="40" src="images/paper.png">
+ </button>
+</div>
+
+<div class="container">
+ <button id="scissors" onclick="result(this.id)" title="Scissors">
+    <img width="60" height="40" src="images/scissors.png">
+</button>
+</div>
+
+<h2 style="text-align: center;">Scoreboard</h2>
+<div class="scorecard">
+    <h3 id="resultMessage"> Pick a choice </h3>
+    <h3 id="playerScore">Player:0</h3>
+    <h3 id="computerScore">Computer:0</h3>
+</div>
+
+
+<div id="desc"></div>
+<div id="restart"></div>
+
+</div>
 
 </body>
 <html>

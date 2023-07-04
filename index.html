@@ -2,43 +2,47 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 <div class="header">
-    <h1>Rock Paper Scissors</h1>
+    <h1 style="text-align: center;">Rock Paper Scissors</h1>
+</div>
+
+<div class="buttons">
+<div class="container">
+ <input style="border: 3px solid black;" type="button" class="icon-r" id="rock" onclick="result(this.id)" title="Rock">
+</input>
 </div>
 
 <div class="container">
- <button id="rock" onclick="result(this.id)" title="Rock">
-  <img width="60" height="40" src="images/rock.png" > 
- </button>
+ <input style="border: 3px solid black;" type="button" class="icon-p" id="paper" onclick="result(this.id)" title="Paper">
+ </input>
 </div>
 
 <div class="container">
- <button id="paper" onclick="result(this.id)" title="Paper">
-   <img width="60" height="40" src="images/paper.png">
- </button>
+ <input style="border: 3px solid black;" type="button" class="icon-s" id="scissors" onclick="result(this.id)" title="Scissors">
+</input>
+</div>
 </div>
 
-<div class="container">
- <button id="scissors" onclick="result(this.id)" title="Scissors">
-    <img width="60" height="40" src="images/scissors.png">
-</button>
-</div>
+<h2 style="text-align: center;" id="resultMessage">Pick a choice</h2> 
+<div class="bottom-section">
 
-<h2 style="text-align: center;">Scoreboard</h2>
-<div class="scorecard">
-    <h3 id="resultMessage"> Pick a choice </h3>
+<div class="Player">
     <h3 id="playerScore">Player:0</h3>
+</div>
+<div id="restart" style="text-align: center; font-family: 'Caveat', cursive;"></div>
+<div class="Computer">
     <h3 id="computerScore">Computer:0</h3>
 </div>
-
-
-<div id="desc"></div>
-<div id="restart"></div>
+</div>
 
 </div>
+
 
 </body>
 <html>

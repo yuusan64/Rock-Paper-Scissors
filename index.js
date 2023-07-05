@@ -32,9 +32,8 @@ function restart(){
     const res=document.createElement("button")
     res.innerText="Restart"
     prompt.appendChild(res)
-    var styleButton = "align-self: center; background-color: rgba(245,244,240,255);font-size:40px;border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;border-bottom-left-radius: 15px 255px;border-bottom-right-radius: 225px 15px;border-top-left-radius: 255px 15px;border-top-right-radius: 15px 225px;cursor: pointer;border-width: 2px;font-family: 'Caveat', cursive;font-family: 'Shadows Into Light', cursive;;line-height: 23px;padding: 12px 28px;";
+    var styleButton = "align-self: center; background-color: rgba(245,244,240,255);font-size:40px;border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;border-bottom-left-radius: 15px 255px;border-bottom-right-radius: 225px 15px;border-top-left-radius: 255px 15px;border-top-right-radius: 15px 225px;border-width: 2px;font-family: 'Caveat', cursive;font-family: 'Shadows Into Light', cursive;;line-height: 23px;padding: 12px 28px;"
     res.setAttribute('style', styleButton);
-
     res.addEventListener('click', function(){
       window.location.reload(false);
     });

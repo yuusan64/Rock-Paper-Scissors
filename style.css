@@ -1,10 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
 body{
   background-color: rgba(245,244,240,255);  
+
+
 }
 .bottom-section{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 input{
     height: 420px;         
@@ -21,7 +33,7 @@ input{
 h1{
     font-size: 80px;
 }
-h1,h2,h3{
+h1,h2,h3,h5{
     font-family: 'Caveat', cursive;
 font-family: 'Shadows Into Light', cursive;
 }
@@ -32,11 +44,16 @@ h2{
 h3{
     font-size: 45px;
 }
+
 .buttons{
 display: flex;
-justify-content: space-around;
-
+flex-wrap: wrap;
+gap: 150px;
+padding:5% 0;
+align-items: center;
+justify-content: center;
 }
+
 
 input.icon-r{
     background-image: url(images/rock.png);
@@ -55,3 +72,9 @@ input.icon-s{
 input:hover{
     background-blend-mode: difference;
 }
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    align-self: center;
+}
+

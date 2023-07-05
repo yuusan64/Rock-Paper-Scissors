@@ -97,10 +97,10 @@ function result(id){
         if(playerScore===5||computerScore===5){
         disableButtons()
         if(playerScore>computerScore){
-          finalWinner= "Wohooo you won!!"
+          finalWinner= "Woohooo you won!!!"
         }
         else {
-          finalWinner= "Oops.....you lost!"
+          finalWinner= "Oops......you lost!!"
         }
       }
         scorecard(resultText, playerScore, computerScore, finalWinner)

@@ -104,6 +104,4 @@ function result(id){
         }
       }
         scorecard(resultText, playerScore, computerScore, finalWinner)
-        
-
     }
